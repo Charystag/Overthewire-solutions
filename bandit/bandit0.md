@@ -27,8 +27,6 @@ curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scri
 To get the same man page with the colors enabled
 </blockquote>
 
-### Part 1 : Host Specification
-
 <details>
 <summary><h3 style="display:inline-block">Part 1 : Host Specification</h3></summary>
 
