@@ -1,6 +1,6 @@
 # [Overthewire Solutions](https://overthewire.org/wargames/)
 
-## Overthewire rules
+## The Rules
 
 First thing first, ensure to always comply with the [**rules**](https://overthewire.org/rules/) of the wargames
 
