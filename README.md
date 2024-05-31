@@ -62,3 +62,7 @@ Here are a selection of ressources gathered on the internet on how to ask for he
 - [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) *A reference* **informative** *document about how to ask questions*
 - [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask) *A Stackoverflow blogpost on how to ask a question on the forum*
 - [How to debug small programs](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/) *A blogpost about autonomy in debugging before asking questions*
+
+## Useful Ressources
+
+- [Challenge Status](https://status.overthewire.org/) *A link that indicates all the overthewire challenges that are down, if it's green then you need to try harder*
