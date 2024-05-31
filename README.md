@@ -70,6 +70,25 @@ To use it you need:
 You can run `bash --version` to check  the version of bash you're using.
 You can also go [there](https://github.com/Charystag/man_reader.git) to learn more about the project
 
+### Alternative
+
+If the man reader doesn't work for any reason, or if you think you don't need a software that splits the man pages for you, you could still benefit from using a lighter script called `colored_man`. It still works with the termcaps library but only adds colored to the traditionnally white man page.<br/>
+To use it, you have two options :
+1.	Getting the script and then sourcing it in your current environment :
+```bash
+wget https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh && . colored_man.sh
+```
+You can then run the command `man` as usual to run the commands
+
+2.	Running the script directly from the repository :
+
+```bash
+curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s
+```
+
+You can directly add your man page at the end of the command. For example, instead of running `man bash` you'll run `curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s bash`
+
+
 ## Must Read
 
 Here are a selection of ressources gathered on the internet on how to ask for help. This might be very useful, be it during the challenges or during any other stage of your learning journey so ensure you read it thoroughly, even if you didn't learn a thing it will at the very least remind you that RTFM is not an indicator of rudeness, but an invitation to autonomy.
