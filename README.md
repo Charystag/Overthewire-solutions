@@ -1,5 +1,9 @@
 # [Overthewire Solutions](https://overthewire.org/wargames/)
 
+## Overthewire rules
+
+First thing first, ensure to always comply with the [**rules**](https://overthewire.org/rules/) of the wargames
+
 ## Why does this repository exists?
 
 While solving the first challenge, bandit, I had a hard time finding two things:
