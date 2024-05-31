@@ -146,6 +146,6 @@ The full command is :
 ssh -p 2220 -l bandit0 bandit.labs.overthewire.org
 ```
 
-Once we get the login prompt, we can then enter the password bandit0 to successfully complete the bandit0 challenge.
+Once we get the login prompt, we can then enter the password **bandit0** to successfully complete the bandit0 challenge.
 
 </details>
