@@ -21,6 +21,7 @@ We know that we need to use ssh to log into the game and already know that there
 
 > :bulb: You can run
 <blockquote>
+
 ```bash
 curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s ssh
 ```
@@ -34,13 +35,13 @@ To get the same man page with the colors enabled
 <details>
 <summary>Hint</summary>
 
-Look in the ssh man page, in the *DESCRIPTION* section, right after the *SYNOPSIS* there should be, near the beginning, the name of an item that could already be found in the *SYNOPSIS* section
+Look in the ssh man page, in the <b style="color:red">DESCRIPTION</b> section, right after the <b style="color:red">SYNOPSIS</b> there should be, near the beginning, the name of an item that could already be found in the <b style="color:red">SYNOPSIS</b> section
 </details>
 
 <details>
 <summary>Solution</summary>
 
-The argument we are looking for is : *destination*, this argument is the **host** we are trying to connect to. <br/>
+The argument we are looking for is : <i style="color:green">destination</i>, this argument is the **host** we are trying to connect to. <br/>
 For now, our command looks like : `ssh bandit.labs.overthewire.org`
 </details>
 
