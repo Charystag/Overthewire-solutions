@@ -1,4 +1,4 @@
-# Overthewire Solutions
+# [Overthewire](https://overthewire.org/wargames/) Solutions
 
 ## Why does this repository exists?
 
@@ -49,3 +49,16 @@ General Overview of OverTheWire Challenges:
 
 Each wargame is designed to be educational, providing a step-by-step progression from simpler to more complex challenges, allowing players to build their skills incrementally. The platform is widely used by cybersecurity enthusiasts, students, and professionals to practice and refine their hacking abilities in a controlled and educational setting.
 
+
+## What now ?
+
+Now, you can let me walk you through the solutions of the first challenge, [bandit](https://overthewire.org/wargames/bandit/).
+The solutions are available [here](/bandit/README.md)
+
+## Must Read
+
+Here are a selection of ressources gathered on the internet on how to ask for help. This might be very useful, be it during the challenges or during any other stage of your learning journey so ensure you read it thoroughly, even if you didn't learn a thing it will at the very least remind you that RTFM is not an indicator of rudeness, but an invitation to autonomy.
+
+- [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html) *A reference* **informative** *document about how to ask questions*
+- [How do I ask a good question?](https://stackoverflow.com/help/how-to-ask) *A Stackoverflow blogpost on how to ask a question on the forum*
+- [How to debug small programs](https://ericlippert.com/2014/03/05/how-to-debug-small-programs/) *A blogpost about autonomy in debugging before asking questions*
