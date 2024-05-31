@@ -78,7 +78,7 @@ To use it, you have two options :
 ```bash
 wget https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh && . colored_man.sh
 ```
-You can then run the command `man` as usual to run the commands
+You can then run the command `man` as usual to get the same man page but with syntaxical highlighting
 
 2.	Running the script directly from the repository :
 
