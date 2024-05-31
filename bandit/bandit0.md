@@ -44,6 +44,7 @@ Look in the ssh man page, in the <b style="color:red">DESCRIPTION</b> section, r
 The argument we are looking for is the one name **destination** this argument is the **host** we are trying to connect to. <br/>
 For now, our command looks like : `ssh bandit.labs.overthewire.org`
 </details>
+</details>
 
 
 <details>
