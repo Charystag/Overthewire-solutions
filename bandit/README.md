@@ -24,4 +24,4 @@ Bandit is an ideal starting point for beginners and serves as a gateway to more 
 
 ## Where to start?
 
-You can go [there](/bandit/bandit0.md) for the solution to the first challenge
+You can go [there](/bandit/bandit00.md) for the solution to the first challenge
