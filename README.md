@@ -64,6 +64,7 @@ To use it you need:
 -	to not be on Asahi Linux (because for colouring they didn't implement the deprecated `termcaps` which I found a lot easier to use than the `terminfo` library).
 
 You can run `bash --version` to check  the version of bash you're using.
+You can also go [there](https://github.com/Charystag/man_reader.git) to learn more about the project
 
 ## Must Read
 
