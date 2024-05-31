@@ -41,7 +41,7 @@ Look in the ssh man page, in the <b style="color:red">DESCRIPTION</b> section, r
 <details>
 <summary>Solution</summary>
 
-The argument we are looking for is : <i style="color:green">destination</i>, this argument is the **host** we are trying to connect to. <br/>
+The argument we are looking for is the one name **destination** this argument is the **host** we are trying to connect to. <br/>
 For now, our command looks like : `ssh bandit.labs.overthewire.org`
 </details>
 
@@ -49,4 +49,33 @@ For now, our command looks like : `ssh bandit.labs.overthewire.org`
 <details>
 <summary><h3 style="display:inline-block">Part 2 : Port Specification</h3></summary>
 
+After running this command, we can see the following prompt in the terminal :
+
+```bash
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+!!! You are trying to log into this SSH server on port 22, which is not intended.
+
+Charystag@bandit.labs.overthewire.org: Permission denied (publickey).
+
+```
+
+So we need to use the **port** that was specified in the challenge rules
+
+<details>
+<summary>Hint</summary>
+
+Try to look again in the **SYNOPSIS** and **DESCRIPTION** sections of the ssh man page and see if you can manage to find how to specify a port to connect to the remote host
+</details>
+
+<details>
+<summary>Solution</summary>
+
+Using the `-p` option allows us to specify a port to connect to. Our updated command ends up looking like this : `ssh -p 2220 bandit.labs.overthewire.org`
+
+> :bulb: Beware that the option parameters have to be before any non-option parameters
+
+</details>
 </details>
