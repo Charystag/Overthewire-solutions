@@ -1,4 +1,4 @@
-# [Overthewire](https://overthewire.org/wargames/) Solutions
+# [Overthewire Solutions](https://overthewire.org/wargames/)
 
 ## Why does this repository exists?
 
@@ -54,6 +54,16 @@ Each wargame is designed to be educational, providing a step-by-step progression
 
 Now, you can let me walk you through the solutions of the first challenge, [bandit](https://overthewire.org/wargames/bandit/).
 The solutions are available [here](/bandit/README.md)
+
+### About the man reader
+
+During the walkthrough, I'll highlight the information that is to be retrieved inside the man pages using a custom-made tool called *man reader*. As it's name may indicate, I use it to navigate sections of man pages more easily and to not print all of them at the same time. The tool has been written in bash when I decided to make a personnal project to help me learn bash (I was also complaining a lot that peole don't read man pages enough and that is why I decided to make a tool that helps me view man pages more easily). The use of this tool comes with a few prerequisites:
+
+To use it you need:
+-	to be under bash version >=4 (which means not to be on an Apple computer because for god knows which reason they decided to ship computers up to today with bash version 3.2 installed)
+-	to not be on Asahi Linux (because for colouring they didn't implement the deprecated `termcaps` which I found a lot easier to use than the `terminfo` library).
+
+You can run `bash --version` to check  the version of bash you're using.
 
 ## Must Read
 

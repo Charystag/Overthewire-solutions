@@ -1,4 +1,4 @@
-# [Bandit](https://overthewire.org/wargames/bandit/) Challenge
+# [Bandit Challenge](https://overthewire.org/wargames/bandit/)
 
 ## Overview of the Bandit Challenge
 
