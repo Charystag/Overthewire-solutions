@@ -76,7 +76,76 @@ Try to look again in the **SYNOPSIS** and **DESCRIPTION** sections of the ssh ma
 
 Using the `-p` option allows us to specify a port to connect to. Our updated command ends up looking like this : `ssh -p 2220 bandit.labs.overthewire.org`
 
-> :bulb: Beware that the option parameters have to be before any non-option parameters
+> :bulb: It is a good practice to put all option arguments before any non-option argument
 
 </details>
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Part 3 : Username Specification</h3></summary>
+
+Now that we specified the port to connect to, we can see the following prompt :
+
+```bash
+                         _                     _ _ _   
+                        | |__   __ _ _ __   __| (_) |_ 
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_ 
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+                                                       
+
+                      This is an OverTheWire game server. 
+            More information on http://www.overthewire.org/wargames
+
+!!! You are trying to log into this SSH server on port 2220 with a username
+!!! that does not match the bandit game.
+
+Charystag@bandit.labs.overthewire.org's password: 
+
+```
+
+and when we try to input the provided password : `bandit0`, we get the following response :
+
+```bash
+
+Permission denied, please try again.
+Charystag@bandit.labs.overthewire.org's password: 
+
+```
+
+The important information is : **with a username that does not match the bandit game**.
+This tells us that we'll need to specify our username to successfully connect to level bandit0
+
+<details>
+<summary>Hint</summary>
+
+Once again, you have to look into the sections **SYNOPSIS** and **DESCRIPTION** of the ssh man page.<br/>
+The argument you are looking for is now one that allows you to log in as a given user on a remote machine.
+
+</details>
+
+<details>
+<summary>Solution</summary>
+
+Using the `-l` option allows us to specify the user that we want to log into on the remote machine. <br/>
+Our full command looks like : `ssh -p 2220 -l bandit0 bandit.labs.overthewire.org`.
+Once we get the login prompt, we can now enter the password and successfully login to the first level.
+
+</details>
+
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Full Solution</h3></summary>
+
+The full command is :
+
+```bash
+ssh -p 2220 -l bandit0 bandit.labs.overthewire.org
+```
+
+Once we get the login prompt, we can then enter the password bandit0 to successfully complete the bandit0 challenge.
+
 </details>
