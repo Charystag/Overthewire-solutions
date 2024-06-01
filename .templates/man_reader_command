@@ -1,0 +1,1 @@
+bash <(curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/man_reader/master/man_reader.sh)
