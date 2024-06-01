@@ -1,4 +1,4 @@
-# [Bandit1](https://overthewire.org/wargames/bandit/bandit2.html)
+# [Bandit1->2](https://overthewire.org/wargames/bandit/bandit2.html)
 
 ## Level Goal
 
