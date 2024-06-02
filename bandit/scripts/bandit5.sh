@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+clear #This is to keep only the script outputs in case you copy-paste it to your terminal window
 mkdir -p /tmp/testrm
 cd "$(mktemp -d)" && echo "Step 1 - Now in temporary directory" || kill -INT $$
 echo "Step 2 - creation of the /tmp/testrm directory, that will be useful to bring out our security concern"

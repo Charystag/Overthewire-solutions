@@ -111,6 +111,7 @@ Try running the following [script](/bandit/scripts/bandit5.sh) and understanding
 
 ```bash
 #!/usr/bin/env bash
+clear #This is to keep only the script outputs in case you copy-paste it to your terminal window
 mkdir -p /tmp/testrm
 cd "$(mktemp -d)" && echo "Step 1 - Now in temporary directory" || kill -INT $$
 echo "Step 2 - creation of the /tmp/testrm directory, that will be useful to bring out our security concern"
@@ -128,7 +129,10 @@ if ls /tmp | grep testrm > /dev/null ; then echo /tmp/testrm is still there; els
 cd "-" && rm -rf "$OLDPWD" && echo "Step 7 - Back in $PWD"
 ```
 
-In this example we see that our /tmp/testrm directory has been deleted even though we didn't intended at all to do so.
+In this example we see that our /tmp/testrm directory has been deleted even though we didn't intended at all to do so. 
+This is because the command 'rm -rf' has been executed when we tried to execute `file` on our dangerously named file without 
+sanitizing the input. Even if it is harmless for this example, if the attacker replaces `$TEST` with `$HOME` it could be 
+way more harmful.<br/>
 To prevent this from hapenning, instead of the command `find -execdir bash -c 'file {}' \;` we can run the following :
 
 ```bash
