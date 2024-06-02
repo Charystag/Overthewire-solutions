@@ -176,7 +176,7 @@ We can now run the command `cat inhere/-file07` to get the password string
 
 
 <details>
-<summary><h3 style="display:inline-block">Bonus : One liner command</h3></summary>
+<summary><h3 style="display:inline-block">Bonus : One-liner command</h3></summary>
 
 **Useful commands**:
 
