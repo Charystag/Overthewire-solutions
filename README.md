@@ -44,7 +44,8 @@ General Overview of OverTheWire Challenges:
 -	Experience with real-world cybersecurity scenarios and problem-solving techniques.
 
 ### Popular Wargames on OverTheWire
--	Bandit: Focuses on basic Linux command-line skills, file manipulation, and introductory scripting.
+-	[Bandit](https://overthewire.org/wargames/bandit): Focuses on basic Linux command-line skills, file manipulation, and introductory scripting.
+	-	[Walkthrough](/bandit/bandit00.md)
 -	Leviathan: Introduces basic binary exploitation and reverse engineering concepts.
 -	Narnia: Delves deeper into binary exploitation, including stack overflows and format string vulnerabilities.
 -	Natas: Focuses on web application security, covering common web vulnerabilities such as SQL injection and XSS.
