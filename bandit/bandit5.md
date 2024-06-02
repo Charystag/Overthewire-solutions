@@ -96,4 +96,26 @@ We need to print the file after because due to using the execdir option instead 
 </details>
 
 
+<details>
+<summary><h3 style="display:inline-block">Security concerns : One-liner from previous exercise</h3></summary>
+
+In the [previous level](/bandit/bandit4.md) I gave you a one-liner to solve the level
+
+```bash
+find inhere/ -type f -execdir bash -c 'file {} | grep text > /dev/null' \; -execdir cat '{}' \; -quit
+```
+
+Although this command gives the right answer, it presents a [security concern](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Problems-with-_002dexec-and-filenames). 
+Indeed, if an attacker puts a special filename in your directory, it could lead to the deletion of all of your data. Let's see a safe example right now.
+Try running the following script and understanding its output : 
+```bash
+cd "$(mktemp)"
+mkdir testrm
+if ls | grep testrm > /dev/null ; then echo testrm is still there; else echo testrm is unfortunately gone; fi
+touch bonjour 'bonjour ; rm -rf $TEST'
+TEST="testrm" ; find -execdir bash -c 'file {}' \;
+cd "-" && rm -rf "$OLDPWD"
+```
+</details>
+
 You can now jump to the [next level](/bandit/bandit6.md)
