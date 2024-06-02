@@ -53,8 +53,8 @@ Try to look in the section 2 of the [gnu findutils documentation](https://www.gn
 <details>
 <summary>Solution</summary>
 
-The option we're looking for is described [there](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Size). It is the `size` option.
-We are going to invoke it like this `-size 1033c`.
+The option we're looking for is described [there](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Size). It is the `size` option. <br/>
+We are going to invoke it like this : `-size 1033c`.
 </details>
 </details>
 
@@ -62,7 +62,37 @@ We are going to invoke it like this `-size 1033c`.
 <details>
 <summary><h3 style="display:inline-block">Option 2 : Not Executable</h3></summary>
 
-The second option we're looking for is an option
+The second option we're looking for is an option that allows us to check for the executable permission on the file we encounter. Let's look once again into the 
+`find(1)` man page (or the [gnu findutils documentation](https://www.gnu.org/software/findutils/manual/html_mono/find.html)) to find what we need.
+
+<details>
+<summary>Hint</summary>
+
+This time, we still need to look at the section 2 of the [gnu findutils documentation](https://www.gnu.org/software/findutils/manual/html_mono/find.html). 
+However, we need to look into two different subsections of this section 2 to complete our option.
+</details>
+
+<details>
+<summary>Solution</summary>
+
+The option we're looking for is described [there](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Mode-Bits). It is the `executable` option. 
+However, we need our file to not be executable, so we can see in this [section](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Combining-Primaries-With-Operators) 
+that to negate this condition we can use the `-not` operator.<br/>
+We are going to invoke our option like this : `-not -executable`.
+</details>
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Building the command</h3></summary>
+
+After getting our two options, the rest of the command is exactly the same as with the previous exercise.<br/>
+Here is our command : 
+```bash
+find inhere -type f -size 1033c -not -executable -execdir file '{}' \; -print
+```
+
+We need to print the file after because due to using the execdir option instead of the exec option (see the [security considerations](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Security-Considerations-for-find))
 </details>
 
 
