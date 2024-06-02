@@ -13,6 +13,7 @@ Tip: if your terminal is messed up, try the “reset” command.
 ## Helpful Reading Material
 
 - [Regular File](https://www.ibm.com/docs/en/aix/7.3?topic=files-types)
+- [Human Readable File](https://en.wikipedia.org/wiki/Human-readable_medium_and_data)
 - `find(1)` man page
 - [GNU findutils documentation](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
 
@@ -171,6 +172,53 @@ We can now run the command `cat inhere/-file07` to get the password string
 
 1. `find inhere/ -type f -execdir file "{}" \;` to find all the regular files in the inhere directory and run the `file` utility on them
 2. `cat inhere/-file07` to print the contents of the retrieved file
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Bonus : One liner command</h3></summary>
+
+**Useful commands**:
+
+- bash (or any shell)
+- find
+- file
+- grep
+- cat
+
+
+<details>
+<summary>Hint</summary>
+
+To get you started, if you want to find (no pun intended) by yourself, here are a few informations to 
+get you on the right track.
+
+Here are the `find` options we'll use to achieve our goal :
+- type
+- execdir (x2)
+- quit (optionnal)
+</details>
+
+<details>
+<summary>Solution</summary>
+
+The command is the following :
+```bash
+find inhere/ -type f -execdir bash -c 'file {} | grep text > /dev/null' \; -execdir cat '{}' \; -quit
+```
+Here is a step-by-step overview of the command :
+
+1. The first execdir calls execute the command `file {} | grep text > /dev/null` on each retrieved file in the inhere directory. 
+
+> The redirection to `/dev/null` is to ensure that nothing gets printed on stdout, but the important thing here is actually the 
+> [exit status](https://www.gnu.org/software/grep/manual/grep.html#Exit-Status) of the `grep command`.
+See [bash invocation](https://www.gnu.org/software/bash/manual/html_node/Invoking-Bash.html) for informations about the `-c` option.
+
+2. The second execdir calls cat on the only **human-readable** file in the inhere directory
+3. The quit option allows us to stop the `find` utility once we found what we're looking for. To understand what it does, you can 
+replace `grep` by `grep -v` in the previous command
+</details>
+
 </details>
 
 You can now jump to the [next level](/bandit/bandit5.md)
