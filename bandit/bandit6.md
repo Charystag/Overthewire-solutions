@@ -85,12 +85,43 @@ by putting them in a special file.
 <details>
 <summary>Hint</summary>
 
+The information we need lies in two different places. Try to look into :
+- the section 3 of the [gnu bash manual](https://www.gnu.org/software/bash/manual/bash.html)
+- the `null(4)` man page
+
+<blockquote>
+
+You can run :
+```bash
+curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s 4 null
+```
+to print the `null(4)` man page in colors.
+
+</blockquote>
 </details>
 
 <details>
 <summary>Solution</summary>
 
+In the [section 3.6.2](https://www.gnu.org/software/bash/manual/bash.html#Redirecting-Output) of the gnu bash manual, we can learn more about output redirection. 
+I think this isn't written directly (but I may be wrong) in the documentation, but the find utility writtes its error messages to [stderr](https://www.gnu.org/software/libc/manual/html_node/Standard-Streams.html)(see [here](https://man.freebsd.org/cgi/man.cgi?query=stderr&sektion=4&manpath=FreeBSD+14.0-RELEASE+and+Ports) for a more precise documentation about the stderr file).
+However, we can redirect the output from stderr by redirecting the file descriptor number 2 to a file.<br/>
+The file we're going to redirect to is the file [/dev/null](https://www.man7.org/linux/man-pages/man4/zero.4.html)(we could also redirect to `/dev/zero` as writing to any of these file has the same 
+effect).<br/>
+Here is the full command `find / -user bandit7 -group bandit6 -size 33c 2> /dev/zero`. We can then run cat on the file we retrieved.
 </details>
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Full Solution</h3></summary>
+
+1. `find / -user bandit7 -group bandit6 -size 33c 2> /dev/zero` to retrieve the only file that meets the requirements without printing all the error messages
+2. `cat retrieved_file` where *retrieved_file* is the file we got from the first step to dump the password string to stdout.<br/>
+
+> We could also use the one-liner : `find / -user bandit7 -group bandit6 -size 33c -execdir cat '{}' \; 2> /dev/zero` 
+> to dump only the password string to stdout
+
 </details>
 
 You can now jump to the [next level](/bandit/bandit7.md)
