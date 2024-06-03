@@ -8,12 +8,11 @@ The username is **bandit0** and the password is **bandit0**.
 
 ## Commands useful to solve the level
 
-- ssh(1)
+- [ssh](https://man7.org/linux/man-pages/man1/ssh.1.html)
 
 ## Helpful Reading Material
 
 - [Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
-- man ssh
 
 ## Where to start?
 

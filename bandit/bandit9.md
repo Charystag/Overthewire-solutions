@@ -6,9 +6,9 @@ The password for the next level is stored in the file **data.txt** in one of the
 
 ## Commands useful to solve the level
 
-- `file`
-- `strings`
-- `grep`
+- [file](https://linux.die.net/man/1/file)
+- [strings](https://man7.org/linux/man-pages/man1/strings.1.html)
+- [grep](https://www.gnu.org/software/grep/manual/grep.html)
 
 ## Helpful Reading Material
 

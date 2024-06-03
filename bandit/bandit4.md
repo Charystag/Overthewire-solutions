@@ -7,14 +7,13 @@ Tip: if your terminal is messed up, try the “reset” command.
 
 ## Commands useful to solve the level
 
-- find
-- cat
+- [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 
 - [Regular File](https://www.ibm.com/docs/en/aix/7.3?topic=files-types)
 - [Human Readable File](https://en.wikipedia.org/wiki/Human-readable_medium_and_data)
-- `find(1)` man page
 - [GNU findutils documentation](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
 
 ## Where to start?

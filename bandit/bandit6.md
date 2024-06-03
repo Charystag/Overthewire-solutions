@@ -10,8 +10,8 @@ The password for the next level is stored **somewhere on the server** and has al
 
 ## Commands useful to solve the level
 
-- `find`
-- `cat`
+- [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 

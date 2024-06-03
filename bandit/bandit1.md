@@ -6,12 +6,11 @@ The password for the next level is stored in a file called **-** located in the 
 
 ## Commands useful to solve the level
 
-- cat
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 
 - [Open a dashed filename](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)
-- `man cat`
 
 ## Where to start?
 

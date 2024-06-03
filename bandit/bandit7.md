@@ -6,11 +6,11 @@ The password for the next level is stored in the file **data.txt** next to the w
 
 ## Commands useful to solve the level
 
-- `grep`
-- `file` *optionnal*
-- `head` *optionnal*
-- `wc` *optionnal*
-- `cut` *optionnal*
+- [grep](https://www.gnu.org/software/grep/manual/grep.html)
+- [file](https://linux.die.net/man/1/file) *optionnal*
+- [head](https://www.gnu.org/software/coreutils/manual/coreutils.html#head-invocation) *optionnal*
+- [wc](https://www.gnu.org/software/coreutils/manual/coreutils.html#wc-invocation) *optionnal*
+- [cut](https://www.gnu.org/software/coreutils/manual/coreutils.html#cut-invocation) *optionnal*
 
 ## Helpful Reading Material
 

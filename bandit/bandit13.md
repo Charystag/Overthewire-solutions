@@ -4,8 +4,8 @@
 
 ## Commands useful to solve the level
 
-- ssh
-- scp
+-	[ssh](https://man7.org/linux/man-pages/man1/ssh.1.html)
+- 	[scp](https://man7.org/linux/man-pages/man1/scp.1.html)
 
 ## Helpful Reading Material
 

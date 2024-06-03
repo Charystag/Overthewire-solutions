@@ -6,8 +6,8 @@ The password for the next level is stored in the file **data.txt** and is the on
 
 ## Commands useful to solve the level
 
-- `sort`
-- `uniq`
+- [sort](https://www.gnu.org/software/coreutils/manual/coreutils.html#sort-invocation)
+- [uniq](https://www.gnu.org/software/coreutils/manual/coreutils.html#uniq-invocation)
 
 ## Helpful Reading Material
 

@@ -6,9 +6,9 @@ The password for the next level is stored in the file **data.txt**, which contai
 
 ## Commands useful to solve the level
 
-- `base64`
-- `file` *Optional*
-- `head` *Optional*
+- [base64](https://www.gnu.org/software/coreutils/manual/coreutils.html#base64-invocation)
+- [file](https://linux.die.net/man/1/file) *Optional*
+- [head](https://www.gnu.org/software/coreutils/manual/coreutils.html#head-invocation) *Optional*
 
 ## Helpful Reading Material
 

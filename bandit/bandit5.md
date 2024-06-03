@@ -10,9 +10,9 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 ## Commands useful to solve the level
 
-- file
-- find
-- cat
+- [file](https://linux.die.net/man/1/file)
+- [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 

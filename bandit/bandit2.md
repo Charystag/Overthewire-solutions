@@ -6,8 +6,8 @@ The password for the next level is stored in a file called **spaces in this file
 
 ## Commands useful to solve the level
 
-- ls
-- cat
+- [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 

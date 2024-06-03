@@ -6,9 +6,9 @@ The password for the next level is stored in the file **data.txt**, where all lo
 
 ## Commands useful to solve the level
 
-- `tr`
-- `file` *Optional*
-- `head` *Optional*
+- [tr](https://www.gnu.org/software/coreutils/manual/coreutils.html#tr-invocation)
+- [file](https://linux.die.net/man/1/file) *Optional*
+- [head](https://www.gnu.org/software/coreutils/manual/coreutils.html#head-invocation) *Optional*
 
 ## Helpful Reading Material
 

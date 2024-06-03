@@ -8,14 +8,14 @@ Or better, use the command “mktemp -d”. Then copy the datafile using cp, and
 
 ## Commands useful to solve the level
 
-- cp
-- mv
-- mktemp
-- tar
-- gzip
-- bzip2
-- xxd
-- file
+- [cp](https://www.gnu.org/software/coreutils/manual/coreutils.html#cp-invocation)
+- [mv](https://www.gnu.org/software/coreutils/manual/coreutils.html#mv-invocation)
+- [mktemp](https://www.gnu.org/software/coreutils/manual/coreutils.html#mktemp-invocation)
+- [tar](https://www.gnu.org/software/tar/manual/tar.html)
+- [gzip](https://www.gnu.org/software/gzip/manual/gzip.html)
+- [bzip2](https://linux.die.net/man/1/bzip2)
+- [xxd](https://linux.die.net/man/1/xxd)
+- [file](https://linux.die.net/man/1/file)
 
 ## Helpful Reading Material
 

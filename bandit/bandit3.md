@@ -6,9 +6,9 @@ The password for the next level is stored in a **hidden file** in the **inhere**
 
 ## Commands useful to solve the level
 
-- cd
-- ls
-- cat
+- [cd](https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html)
+- [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 
