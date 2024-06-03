@@ -38,7 +38,7 @@ Thus, running the following command :
 ```bash
 base64 -d data.txt
 ```
-will print the password string to stdout.
+will print a string which should look like this one : `The password is password_string` to stdout.
 </details>
 
 You can now jump to the [next level](/bandit/bandit11.md)
