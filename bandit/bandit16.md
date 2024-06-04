@@ -161,4 +161,32 @@ We know now that we can use the `s_client` command to send the password to the s
 2. `openssl s_client -ign_eof localhost:31790 < /etc/bandit_pass/bandit16` to retrieve the private ssh key needed to connect to bandit 17.
 </details>
 
+
+<details>
+<summary><h3 style="display:inline-block">Bonus : Writting the ssh key directly to a file</h3></summary>
+
+Wouldn't it be way more suitable to output our ssh key directly to a file? Fortunately, there is an easy way to do so.
+
+
+<details>
+<summary>Hint</summary>
+
+Searching again into the `s_client` man page, can you figure out a way to output the `ssh_key` directly to a file ?
+</details>
+
+<details>
+<summary>Solution</summary>
+
+First, we need to create a file to store the private ssh key, we'll create it using the [mktemp](https://www.gnu.org/software/coreutils/manual/coreutils.html#mktemp-invocation) utility. 
+Then, using the `-sess_out` option we will be able to output our ssl session (which is the ssh key) directly to the file.
+
+This is what our set of commands look like :
+```bash
+PRIVATE_KEY="$(mktemp)"
+openssl s_client -ign_eof -sess_out "$PRIVATE_KEY" localhost:31790 < /etc/bandit_pass/bandit16`
+```
+Then we can run `echo "$PRIVATE_KEY"` to get the name of the file and use the [scp](https://man7.org/linux/man-pages/man1/scp.1.html) command to retrieve the file on our machine.
+</details>
+</details>
+
 You can now jump to the [next level](/bandit/bandit17.md)
