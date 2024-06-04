@@ -82,7 +82,6 @@ set them accordingly?
 In the portion describing the file `~/.ssh/id_rsa`, we can read that this file should be readable by the user and should **not** be accessible by others.<br/>
 Running the `stat` utility on the file gives us the file permissions of our ssh private key. Here is the output from this command :
 ```bash
-Charystag@Charystag:~/Documents/Overthewire$ stat bandit14_sshkey 
   File: bandit14_sshkey
   Size: 1679      	Blocks: 8          IO Block: 4096   regular file
 Device: 804h/2052d	Inode: 8913955     Links: 1
@@ -91,13 +90,42 @@ Access: 2024-06-03 21:05:42.285372019 +0200
 Modify: 2024-06-03 21:05:11.765802230 +0200
 Change: 2024-06-03 21:05:11.765802230 +0200
  Birth: 2024-06-03 21:05:11.733802682 +0200
-Charystag@Charystag:~/Documents/Overthewire$
 ```
 We can now see, (helping ourselves from the documentation about [file permissions](https://www.gnu.org/software/coreutils/manual/html_node/File-permissions.html)) that this file 
 is readable and writable by the user and readable by the other members of the user's group. As we don't need to write data to the private key file, we can restrict the permissions 
 to the minimum, we'll only allow the current user (us) to write to the file.<br/>
-The following call to the `chmod` utility will allow us to achieve our goal : `chmod 400 bandit14_sshkey`
+The following call to the `chmod` utility will allow us to achieve our goal : `chmod 400 bandit14_sshkey`.
 </details>
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Part 3 : Connecting using the ssh key</h3></summary>
+
+Now that the right file permissions are set, the last thing we need to do is to connect to the user bandit14 using our private ssh key.
+
+<details>
+<summary>Hint</summary>
+
+Going back into the `ssh(1)` [man page](https://man7.org/linux/man-pages/man1/ssh.1.html), can you figure out an option that would 
+allow us to use the ssh key we just got to connect to the user bandit14 ?
+</details>
+
+<details>
+<summary>Solution</summary>
+
+The option we're looking for is the option `-i` which allows us to use our *identity_file* to connect without the need for a password.
+This is our full command : `ssh -p 2220 -l bandit14 -i bandit14_sshkey bandit.labs.overthewire.org`
+</details>
+</details>
+
+
+<details>
+<summary><h3 style="display:inline-block">Full Solution</h3></summary>
+
+1. `scp scp://bandit13@bandit.labs.overthewire.org:2220/home/bandit13/sshkey.private ./bandit14_sshkey` to retrieve the private ssh key from the bandit13 user
+2. `chmod 400 bandit14_sshkey` to set the right file permissions and allow us to connect over ssh
+3. `ssh -i bandit14_sshkey ssh://bandit14@bandit.labs.overthewire.org:2220` to finally connect to user bandit14
 </details>
 
 You can now jump to the [next level](/bandit/bandit14.md)
