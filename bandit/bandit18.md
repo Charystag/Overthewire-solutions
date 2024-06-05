@@ -7,7 +7,7 @@ Unfortunately, someone has modified **.bashrc** to log you out when you log in w
 
 ## Commands useful to solve the level
 
-- [ssh](https://linux.die.net/man/1/ssh)
+- [ssh](https://man.openbsd.org/ssh)
 - [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
@@ -30,7 +30,7 @@ As we are anyway login in using the ssh protocol, we need to find a way to run a
 <details>
 <summary>Hint</summary>
 
-Once again, look into the [ssh](https://linux.die.net/man/1/ssh) man page, find a way to execute a command on the remote host instead of an interactive shell.
+Once again, look into the [ssh](https://man.openbsd.org/ssh) man page, find a way to execute a command on the remote host instead of an interactive shell.
 </details>
 
 <details>
