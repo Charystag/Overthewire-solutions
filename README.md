@@ -102,3 +102,11 @@ Here are a selection of ressources gathered on the internet on how to ask for he
 
 - [Challenge Status](https://status.overthewire.org/) *A link that indicates all the overthewire challenges that are down, if it's green then you need to try harder*
 - [Introduction to user commands](https://man7.org/linux/man-pages/man1/intro.1.html)
+
+## Reminder - Cleanup after yourself
+
+For the challenges where you need to work in a temporary directory, you can run the following command : 
+```bash
+cd $HOME && rm -rf $OLDPWD
+```
+to remove the contents of the temporary directory you were in.
