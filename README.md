@@ -110,3 +110,17 @@ For the challenges where you need to work in a temporary directory, you can run 
 cd $HOME && rm -rf $OLDPWD
 ```
 to remove the contents of the temporary directory you were in.
+
+## On the importance of sourcing
+
+I thought I'd end this README by sharing with you something I learned the hard way : More often than not, it is a pain in the a\*\* to find links to official documentation. 
+People seems to find more relevant to link to online tutorials (when then even bother to do so). This statement is not to be taken as a general as there are, 
+thankfully, a lot of people that link to official doc.
+
+### Why do I even bother talking about it ?
+
+By including links to official documentation, we ensure trustworthiness, accuracy and we give the opportunity to people to learn more concepts that revolve around the documentation (and that's also a kind way to teach them how to RTFM).
+
+So I hope you'll find all the work here useful, it was fun yet painful doing all the research work but it helped me understand a lot of things about programming and I hope it will help you too.
+
+Without further ado, let's dive right into the [first challenge](/bandit/README.md)
