@@ -25,3 +25,7 @@ Bandit is an ideal starting point for beginners and serves as a gateway to more 
 ## Where to start?
 
 You can go [there](/bandit/bandit00.md) for the solution to the first challenge
+
+## Acknowledgments
+
+To prepare that walkthrough I decided to use another solution to keep me focused and to ensure I wasn't missing any important information, so [here](https://rednet.io/2020-09-12-overthewire-bandit-0-8.html) it is if by any mean you speak french and you'd like to check it out.
