@@ -75,8 +75,6 @@ can you retrieve all the **quoting mechanism** that are available to us in order
 <details>
 <summary>Solution</summary>
 
-</details>
-
 There are 3 quoting mechanism that allow us to print this file : 
 
 1. By escaping the spaces with the filename : `spaces\ in\ this\ filename`. As the `\` preserves the litteral value of the 
@@ -89,6 +87,7 @@ value of **all** the characters they enclose
 value of all the characters they enclose, appart from `$`, `` ` `` and `\`. As the character we need to preserve is the **space**, 
 we can also use the double quotes to achieve this goal.
 
+</details>
 </details>
 
 
