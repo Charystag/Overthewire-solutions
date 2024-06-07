@@ -2,12 +2,14 @@
 
 ## Level Goal
 
-The password for the next level is stored in a file called **readme** located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+The password for the next level is stored in a file called **readme** located in the home directory. 
+Use this password to log into bandit1 using SSH. Whenever you find a password for a level, 
+use SSH (on port 2220) to log into that level and continue the game.
 
 ## Commands useful to solve the level
 
-- ls
-- cat
+- [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation)
+- [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
 ## Helpful Reading Material
 
@@ -16,7 +18,9 @@ The password for the next level is stored in a file called **readme** located in
 
 ## Where to start ?
 
-We know that the password for the next level is stored in a file called **readme** which is located in the home directory. First thing to know is that when we log as a user we end up in the user home directory. That is how we know that we automatically begin in user **bandit0** home directory.
+We know that the password for the next level is stored in a file called **readme** which is located in the home directory. 
+First thing to know is that when we log as a user we end up in the user home directory. 
+That is how we know that we automatically begin in user **bandit0** home directory.
 
 
 <details>
@@ -26,17 +30,9 @@ We know that the password for the next level is stored in a file called **readme
 <details>
 <summary>Hint</summary>
 
-Why don't you look into `man ls` to ensure that the file you're looking for is really there?
+Why don't you look into the [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation) 
+man page to ensure that the file you're looking for is really there?
 
-<blockquote>
-
-:bulb: You can run : 
-```bash
-curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s ls
-```
-to print the same man page with syntaxical highlighting
-
-</blockquote>
 </details>
 
 <details>
@@ -63,18 +59,9 @@ Now we need to know how to print the contents of the readme file
 <details>
 <summary>Hint</summary>
 
-Same as before, we can run the command `man cat` to get to know the `cat` utility.
+Same as before, we can look into the [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation) 
+man page to get to know the `cat` utility.
 
-
-<blockquote>
-
-:bulb: You can run : 
-```bash
-curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s cat
-```
-to print the same man page with syntaxical highlighting
-
-</blockquote>
 </details>
 
 <details>
