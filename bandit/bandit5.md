@@ -10,7 +10,7 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 ## Commands useful to solve the level
 
-- [file](https://linux.die.net/man/1/file)
+- [file](https://man7.org/linux/man-pages/man1/file.1.html)
 - [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
 - [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
 
@@ -27,17 +27,7 @@ Without further ado, let's dive right into the solution.
 ## Walkthrough
 
 The goal of this exercise is to add options to the `find` command, so that the file we're retrieving meets all the requirements.
-We'll try to find the options one after the other into the `find(1)` man page (also available [here](https://www.gnu.org/software/findutils/manual/html_mono/find.html)).
-
-<blockquote>
-
-You can run :
-```bash
-curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s find
-```
-to view the `find(1)` man page with colors.
-
-</blockquote>
+We'll try to find the options one after the other into the [find(1)](https://www.gnu.org/software/findutils/manual/html_mono/find.html) documentation.
 
 <details>
 <summary><h3 style="display:inline-block">Option 1 : File Size</h3></summary>
