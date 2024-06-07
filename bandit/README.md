@@ -1,6 +1,6 @@
 # [Bandit Challenge](https://overthewire.org/wargames/bandit/)
 
-![Bandit picture](/assets/bandit.png)
+<img src="/assets/bandit.png" width="500" height="500" alt="bandit picture"/>
 
 ## Overview of the Bandit Challenge
 
