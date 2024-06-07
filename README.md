@@ -92,4 +92,4 @@ By including links to official documentation, we ensure trustworthiness, accurac
 
 So I hope you'll find all the work here useful, it was fun yet painful doing all the research work but it helped me understand a lot of things about programming and I hope it will help you too.
 
-Without further ado, let's dive right into the [first challenge](/bandit/README.md)
+Without any mode delay, let's dive right into the [first challenge](/bandit/README.md)
