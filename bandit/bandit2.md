@@ -45,21 +45,19 @@ Options can also be numbers
 <summary>Solution</summary>
 
 The `-1` option is the option we were looking for
-</details>
 
 However when using the option we previously found we see the following :
 
 ```bash
-bandit2@bandit:~$ ls -opt
+bandit2@bandit:~$ ls -1
 spaces in this filename
 bandit2@bandit:~$ 
 ```
 
 which is exactly the same prompt as before. However, as this option allows us to list one file per line, we know 
 for sure that `spaces in this filename` is actually the name of a unique file.
-
 </details>
-
+</details>
 
 <details>
 <summary><h3 style="display:inline-block">Part 2 : Printing the file</h3></summary>
