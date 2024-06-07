@@ -14,7 +14,7 @@ The password for the next level is stored in a **hidden file** in the **inhere**
 
 - [Hidden file and hidden directory](https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory)
 - [What are directories, if everything on Linux is a file?](https://askubuntu.com/questions/1073802/what-are-directories-if-everything-on-linux-is-a-file)
-- `inode(7) man page`
+- [inode(7) man page](https://www.man7.org/linux/man-pages/man7/inode.7.html)
 
 
 ## Where to start?
@@ -41,21 +41,11 @@ this builtin to navigate to the directory named **inhere**.
 <details>
 <summary>Hint</summary>
 
-`man cd` doesn't work here. Indeed, the `cd` builtin is part of the shell you're using (I'll assume you're using bash). So you'll have to search `man bash` 
-in the section "SHELL BUILTIN COMMANDS".
+`man cd` doesn't work here. Indeed, the `cd` builtin is part of the shell you're using (I'll assume you're using bash). 
 
-<blockquote>
+However, you can view the [**SHELL BUILTIN COMMANDS**](https://www.gnu.org/software/bash/manual/html_node/Shell-Builtin-Commands.html) section of the 
+gnu bash manual.
 
-We have two ways to efficiently retrieve this information : 
-
-1. By using the man reader, and then looking for the cd builtin
-```bash
-bash <(curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/man_reader/master/man_reader.sh) bash 79
-```
-
-2. If for any reason this doesn't work, or you prefer browsing the web, you can visit this [link](https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html)
-
-</blockquote>
 </details>
 
 <details>
@@ -80,16 +70,8 @@ However, we know that there is a hidden file in this directory, we need to find 
 <details>
 <summary>Hint</summary>
 
-Look at the **DESCRIPTION** section of `man ls`. The option you're looking for should be near the top
-
-<blockquote>
-
-You can run :
-```bash
-curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s ls
-```
-to print the ls `man page` with colors
-</blockquote>
+Look at the **DESCRIPTION** section of [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation). 
+The option you're looking for should be near the top
 
 </details>
 
@@ -131,16 +113,8 @@ Up until now, we used the `ls` utility with options but without any argument. We
 <details>
 <summary>Hint</summary>
 
-Once again, we'll look in the `ls` man page, but this time we need to have a look in the **SYNOPSYS** section.
-<blockquote>
-
-You can run :
-```bash
-curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s ls
-```
-to print the ls `man page` with colors
-
-</blockquote>
+Once again, we'll look in the [ls](https://www.gnu.org/software/coreutils/manual/coreutils.html#ls-invocation) 
+man page, but this time we need to have a look in the **SYNOPSYS** section.
 </details>
 
 <details>
