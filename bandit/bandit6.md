@@ -86,16 +86,8 @@ by putting them in a special file.
 <summary>Hint</summary>
 
 The information we need lies in two different places. Try to look into :
-- the section 3 of the [gnu bash manual](https://www.gnu.org/software/bash/manual/bash.html)
-- the `null(4)` man page
-
-<blockquote>
-
-You can run :
-```bash
-curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s 4 null
-```
-to print the `null(4)` man page in colors.
+- the [section 3](https://www.gnu.org/software/bash/manual/bash.html) of the gnu bash manual
+- the [null(4)](https://man7.org/linux/man-pages/man4/null.4.html) man page
 
 </blockquote>
 </details>
