@@ -9,6 +9,7 @@ Tip: if your terminal is messed up, try the “reset” command.
 
 - [find](https://www.gnu.org/software/findutils/manual/html_mono/find.html)
 - [cat](https://www.gnu.org/software/coreutils/manual/coreutils.html#cat-invocation)
+- [file](https://man7.org/linux/man-pages/man1/file.1.html)
 
 ## Helpful Reading Material
 
@@ -19,17 +20,7 @@ Tip: if your terminal is messed up, try the “reset” command.
 ## Where to start?
 
 As there isn't a lot of helpful reading material (because the material is already very complete), we **must** start by opening 
-the `find(1)` man page : `man 1 find`
-
-<blockquote>
-
-You can run :
-```bash
-curl -fsSL --connect-timeout 5 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s 1 find
-```
-to get the `find(1)` man page with colors
-
-</blockquote>
+the [find(1)](https://www.gnu.org/software/findutils/manual/html_mono/find.html) documentation 
 
 Now that we got an idea of what the find utility does we need to know exactly what characteristics the file we are looking for has.
 - it is **human-readable**.
@@ -47,13 +38,14 @@ call to the `find(1)` utility. First things first, we need to know how to run th
 <details>
 <summary>Hint</summary>
 
-Look at the **SYNOPSIS** section of the `find(1)` man page.
+Look at the [starting points](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Starting-points) 
+section of the `find(1)` man page.
 </details>
 
 <details>
 <summary>Solution</summary>
 
-When looking in the **SYNOPSIS** section of the `find(1)` man page, we see an optional argument named **starting-point**. This argument 
+When looking in the starting points section of the `find(1)` man page, we see an optional argument named **starting-point**. This argument 
 allows the user to specify a starting directory when running the `find` utility. By default, the starting point is `.` which is the 
 current directory.
 So, running `find inhere` allows us to list the contents of the **inhere** directory
@@ -95,7 +87,8 @@ Let's now try to list only the regular files within the inhere directory
 <details>
 <summary>Hint</summary>
 
-Isn't  there a test that you could use in the **TESTS** section of the `find(1)` man page?
+By looking at the section 2 of the [gnu findutils documentation](https://www.gnu.org/software/findutils/manual/html_mono/find.html) 
+can you retrieve a test that tests for regular files?
 </details>
 
 <details>
@@ -127,7 +120,8 @@ inhere/-file09
 bandit4@bandit:~$
 ```
 
-We could try to manually run `cat` on each file but besides being an ugly as hell solution, it offers a [security risk](https://security.stackexchange.com/questions/56307/can-cat-ing-a-file-be-a-potential-security-risk). 
+We could try to manually run `cat` on each file but besides being an ugly as hell solution, it presents a 
+[security risk](https://security.stackexchange.com/questions/56307/can-cat-ing-a-file-be-a-potential-security-risk). 
 Thankfully, there is a solution which stands in the `file(1)` utility
 We now need to find in the `file(1)` man page how to find the only human readable file within the inhere directory.
 
@@ -135,13 +129,15 @@ We now need to find in the `file(1)` man page how to find the only human readabl
 <details>
 <summary>Hint</summary>
 
-Look into the `file(1)` and the `find(1)` man page. See if there is an **ACTION** in the `find(1)` page that could let you execute the `find` command on the file you retrieved
+Look into the [file(1)](https://man7.org/linux/man-pages/man1/file.1.html) and the [section 3](https://www.gnu.org/software/findutils/manual/html_mono/find.html) of the gnu 
+findutils documentation, see if there is an **ACTION** in the `find(1)` page that could let you execute the `file` command on the file you retrieved
 </details>
 
 <details>
 <summary>Solution</summary>
 
-The **ACTION** we're looking for is `-execdir`. We will use the form `-execdir command ;` as it is safer than the `-exec command ;` form (see [security considerations](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Security-Considerations). 
+The **ACTION** we're looking for is `-execdir`. We will use the form `-execdir command ;` as it is safer than the `-exec command ;` 
+form (see [security considerations](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Security-Considerations). 
 As the `;` is a [metacharacter](https://www.gnu.org/software/bash/manual/html_node/Definitions.html), we will need to escape it with a `\` to pass it to the `find` command. 
 For the same reason, we'll have to enclose the brackets `{}` within simple or double quotes<br/>
 
