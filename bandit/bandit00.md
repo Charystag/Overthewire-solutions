@@ -73,7 +73,10 @@ Try to look again in the **SYNOPSIS** and **DESCRIPTION** sections of the ssh ma
 <details>
 <summary>Solution</summary>
 
-Using the `-p` option allows us to specify a port to connect to. Our updated command ends up looking like this : `ssh -p 2220 bandit.labs.overthewire.org`
+Using the `-p` option allows us to specify a port to connect to. Our updated command ends up looking like this : 
+```bash
+ssh -p 2220 bandit.labs.overthewire.org
+```
 
 > :bulb: It is a good practice to put all option arguments before any non-option argument
 
