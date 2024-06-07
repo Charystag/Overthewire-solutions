@@ -16,21 +16,11 @@ The username is **bandit0** and the password is **bandit0**.
 
 ## Where to start?
 
-We know that we need to use ssh to log into the game and already know that there is only one command that may be useful to solve the challenge. After reading about what is the secure shell on wikipedia, let's dive right into it and run the following command : `man ssh`
+We know that we need to use ssh to log into the game and already know that there is only one command that may be useful to solve the challenge. After reading about what is the secure shell on wikipedia, let's dive right into it and look into the [ssh man page](https://man7.org/linux/man-pages/man1/ssh.1.html)
 
-> :bulb: You can run
-<blockquote>
-
-```bash
-curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s ssh
-```
-To get the same man page with the colors enabled
-</blockquote>
-
-<details>
 <summary><h3 style="display:inline-block">Part 1 : Host Specification</h3></summary>
 
-
+Our first job is to find out how to specify the **host** that we're trying to connect to.
 <details>
 <summary>Hint</summary>
 
