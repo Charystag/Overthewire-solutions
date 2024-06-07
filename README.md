@@ -54,41 +54,10 @@ General Overview of OverTheWire Challenges:
 
 Each wargame is designed to be educational, providing a step-by-step progression from simpler to more complex challenges, allowing players to build their skills incrementally. The platform is widely used by cybersecurity enthusiasts, students, and professionals to practice and refine their hacking abilities in a controlled and educational setting.
 
-
 ## What now ?
 
 Now, you can let me walk you through the solutions of the first challenge, [bandit](https://overthewire.org/wargames/bandit/).
 The solutions are available [here](/bandit/README.md)
-
-### About the man reader
-
-During the walkthrough, I'll highlight the information that is to be retrieved inside the man pages using a custom-made tool called *man reader*. As it's name may indicate, I use it to navigate sections of man pages more easily and to not print all of them at the same time. The tool has been written in bash when I decided to make a personnal project to help me learn bash (I was also complaining a lot that peole don't read man pages enough and that is why I decided to make a tool that helps me view man pages more easily). The use of this tool comes with a few prerequisites:
-
-To use it you need:
--	to be under bash version >=4 (which means not to be on an Apple computer because for god knows which reason they decided to ship computers up to today with bash version 3.2 installed)
--	to not be on Asahi Linux (because for colouring they didn't implement the deprecated `termcaps` which I found a lot easier to use than the `terminfo` library).
-
-You can run `bash --version` to check  the version of bash you're using.
-You can also go [there](https://github.com/Charystag/man_reader.git) to learn more about the project
-
-### Alternative
-
-If the man reader doesn't work for any reason, or if you think you don't need a software that splits the man pages for you, you could still benefit from using a lighter script called `colored_man`. It still works with the termcaps library but only adds colored to the traditionnally white man page.<br/>
-To use it, you have two options :
-1.	Getting the script and then sourcing it in your current environment :
-```bash
-wget https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh && . colored_man.sh
-```
-You can then run the command `man` as usual to get the same man page but with syntaxical highlighting
-
-2.	Running the script directly from the repository :
-
-```bash
-curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s
-```
-
-You can directly add your man page at the end of the command. For example, instead of running `man bash` you'll run `curl -fsSL --connect-timeout 10 https://raw.githubusercontent.com/Charystag/Scripts/main/colored_man.sh | bash -s bash`
-
 
 ## Must Read
 
