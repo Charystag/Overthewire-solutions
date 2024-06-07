@@ -10,7 +10,7 @@ The password for the next level is stored in a file called **-** located in the 
 
 ## Helpful Reading Material
 
-- [Open a dashed filename](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal)
+- [Open a dashed filename](https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal) *Contains Spoilers*
 
 ## Where to start?
 
