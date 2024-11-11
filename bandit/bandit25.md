@@ -61,7 +61,7 @@ exit 0
 We see here that the script sets one variable `TERM` and then runs the `more` utility.
 
 One thing we can already notice is that the `showtext` executable doesn't take any argument, so we won't be able to ssh our way into bandit26 account 
-running a command like we did in [level18](/bandit/bandit18.md) (see 
+running a command like we did in [level18](bandit18.md) (see 
 [how ssh commands are run](https://unix.stackexchange.com/questions/744263/does-ssh-run-commands-rather-than-shell-itself-in-a-login-shell) for more 
 explanations). We'll have to find another way to get in.
 
@@ -159,4 +159,4 @@ To change the shell, we just have to run `:set shell=/usr/bin/bash`, we can then
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit26.md)
+You can now jump to the [next level](bandit26.md)

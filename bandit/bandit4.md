@@ -216,4 +216,4 @@ replace `grep` by `grep -v` in the previous command
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit5.md)
+You can now jump to the [next level](bandit5.md)

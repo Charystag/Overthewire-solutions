@@ -142,4 +142,4 @@ Once we get the login prompt, we can then enter the password **bandit0** to succ
 
 </details>
 
-You can now solve the [first level](/bandit/bandit0.md)
+You can now solve the [first level](bandit0.md)

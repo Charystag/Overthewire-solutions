@@ -19,7 +19,7 @@ Next to ‘R’ and ‘Q’, the ‘B’ command also works in this version of t
 
 ## Where to start?
 
-For the network analysis and password retrieval, you can go to the [previous challenge](/bandit/bandit14.md). In this challenge 
+For the network analysis and password retrieval, you can go to the [previous challenge](bandit14.md). In this challenge 
 I'm only going to show how to use the `s_client` command from the `openssl` program to efficiently 
 communicate with our server.
 
@@ -81,4 +81,4 @@ openssl s_client -ign_eof localhost:30001 < /etc/bandit_pass/bandit15
 1. `openssl s_client -quiet localhost:30001 < /etc/bandit_pass/bandit15` to retrieve the password from the SSL server
 </details>
 
-You can now jump to the [next level](/bandit/bandit16.md)
+You can now jump to the [next level](bandit16.md)

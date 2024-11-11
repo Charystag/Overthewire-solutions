@@ -38,7 +38,7 @@ you'll understand deeply what they mean and how to set them properly.
 > me 3 days to figure out the solution to that level. Not because I couldn't write a script but because I never cared that much about file permissions 
 > so you can trust me, I'll set you on the right track for thinking about file permissions in a Linux environment.
 
-For the script retrieval, as with the previous level, I'll let you see the [level 21](/bandit/bandit21) and then come back when the script is in front 
+For the script retrieval, as with the previous level, I'll let you see the [level 21](bandit21) and then come back when the script is in front 
 of your eyes.
 
 
@@ -56,7 +56,7 @@ Using the useful commands and the helpful reading material, can you figure out w
 <details>
 <summary>Solution</summary>
 
-We already know from the [previous level](/bandit/bandit22.md) that the script changes the directory to `/var/spool/bandit24/foo` as `bandit24` is the 
+We already know from the [previous level](bandit22.md) that the script changes the directory to `/var/spool/bandit24/foo` as `bandit24` is the 
 value contained in the `myname` variable.
 
 The script then executes as follows :
@@ -82,14 +82,14 @@ written it will give us the password for the bandit24 level.
 <details>
 <summary>Hint</summary>
 
-Using the [previous level](/bandit/bandit22.md), can you design a simple script to print bandit24 password in a way we can retrieve it? Recall that all output is redirected to 
+Using the [previous level](bandit22.md), can you design a simple script to print bandit24 password in a way we can retrieve it? Recall that all output is redirected to 
 [/dev/null](https://man7.org/linux/man-pages/man4/null.4.html), which means you may have to create a file where bandit24 will be able to write the password to.
 </details>
 
 <details>
 <summary>Solution</summary>
 
-For this basic script, we'll copy the model of [bandit22](/bandit/bandit22). This means that we'll write a simple script that prints the password to a custom file. Here is 
+For this basic script, we'll copy the model of [bandit22](bandit22). This means that we'll write a simple script that prints the password to a custom file. Here is 
 the script we'll use :
 ```bash
 #!/usr/bin/env bash
@@ -213,4 +213,4 @@ Then, by putting our script back into the `/var/spool/bandit24/foo` directory, w
 </details>
 </details>
 
-You can now jump to the [next level](/bandit/bandit24.md)
+You can now jump to the [next level](bandit24.md)

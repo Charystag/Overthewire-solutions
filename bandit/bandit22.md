@@ -22,7 +22,7 @@ If you are having problems understanding what it does, try executing it to see t
 
 ## Where to start?
 
-To know how to retrieve the script for this level, you can refer to the [previous level](/bandit/bandit21.md). 
+To know how to retrieve the script for this level, you can refer to the [previous level](bandit21.md). 
 We will focus only on the script analysis for this challenge
 
 
@@ -76,4 +76,4 @@ we can retrieve the password for the bandit23 user.
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit23.md)
+You can now jump to the [next level](bandit23.md)

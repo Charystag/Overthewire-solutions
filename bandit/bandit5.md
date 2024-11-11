@@ -20,7 +20,7 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 ## Where to start?
 
-The solution is very similar to the one of the [previous level](/bandit/bandit4.md) so check that one for a more in-depth explanation. 
+The solution is very similar to the one of the [previous level](bandit4.md) so check that one for a more in-depth explanation. 
 For this level, I will give less explanations and only add complements to teach you about where to find the relevant information. 
 Without further ado, let's dive right into the solution.
 
@@ -89,7 +89,7 @@ We need to print the file after because due to using the execdir option instead 
 <details>
 <summary><h3 style="display:inline-block">Security concerns : One-liner from previous exercise</h3></summary>
 
-In the [previous level](/bandit/bandit4.md) I gave you a one-liner to solve the level
+In the [previous level](bandit4.md) I gave you a one-liner to solve the level
 
 ```bash
 find inhere/ -type f -execdir bash -c 'file {} | grep text > /dev/null' \; -execdir cat '{}' \; -quit
@@ -97,7 +97,7 @@ find inhere/ -type f -execdir bash -c 'file {} | grep text > /dev/null' \; -exec
 
 Although this command gives the right answer, it presents a [security concern](https://www.gnu.org/software/findutils/manual/html_mono/find.html#Problems-with-_002dexec-and-filenames). 
 Indeed, if an attacker puts a special filename in your directory, it could lead to the deletion of all of your data. Let's see a safe example right now.
-Try running the following [script](/bandit/scripts/bandit5.sh) and understanding its output (you can copy and paste the script into you terminal window): 
+Try running the following [script](scripts/bandit5.sh) and understanding its output (you can copy and paste the script into you terminal window): 
 
 ```bash
 #!/usr/bin/env bash
@@ -133,4 +133,4 @@ to understand precisely what this command do you can go check the -c option in t
 gnu bash manual.
 </details>
 
-You can now jump to the [next level](/bandit/bandit6.md)
+You can now jump to the [next level](bandit6.md)

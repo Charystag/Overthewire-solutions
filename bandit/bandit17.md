@@ -96,4 +96,4 @@ We can then use the new password to go to the following level.
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit18.md)
+You can now jump to the [next level](bandit18.md)

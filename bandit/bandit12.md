@@ -178,4 +178,4 @@ You can understand all the options that have been added by reading the man pages
 </details>
 </details>
 
-You can now jump to the [next level](/bandit/bandit13.md)
+You can now jump to the [next level](bandit13.md)

@@ -149,4 +149,4 @@ where pasword\_string is our 33 bytes characters password string.
 1. `cat /etc/bandit_pass/bandit14 | nc localhost 30000` to send the password to the service listening at localhost:30000.
 </details>
 
-You can now jump to the [next level](/bandit/bandit15.md)
+You can now jump to the [next level](bandit15.md)

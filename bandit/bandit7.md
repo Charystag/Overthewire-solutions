@@ -134,4 +134,4 @@ grep millionth data.txt | cut -f 2
 </details>
 </details>
 
-You can now jump to the [next level](/bandit/bandit8.md)
+You can now jump to the [next level](bandit8.md)

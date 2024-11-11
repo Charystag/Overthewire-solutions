@@ -10,7 +10,7 @@ Good job getting a shell! Now hurry and grab the password for bandit27!
 
 ## Where to start?
 
-This level is the exact same as the [level 19](/bandit/bandit19.md). If 
+This level is the exact same as the [level 19](bandit19.md). If 
 you need any information, go check this level.
 
 <details>
@@ -20,4 +20,4 @@ you need any information, go check this level.
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit27.md)
+You can now jump to the [next level](bandit27.md)

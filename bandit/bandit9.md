@@ -86,4 +86,4 @@ This command prints only one line, which contains the password we're looking for
 </details>
 </details>
 
-You can now jump to the [next level](/bandit/bandit10.md)
+You can now jump to the [next level](bandit10.md)

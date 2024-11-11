@@ -78,4 +78,4 @@ We can then get an actual shell and use it to `cat` the bandit33 password.
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit33.md)
+You can now jump to the [next level](bandit33.md)

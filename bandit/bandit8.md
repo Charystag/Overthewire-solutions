@@ -16,7 +16,7 @@ The password for the next level is stored in the file **data.txt** and is the on
 
 ## Where to start?
 
-To get more information about the file analysis, go to the [previous challenge](/bandit/bandit7.md).
+To get more information about the file analysis, go to the [previous challenge](bandit7.md).
 
 We now need to get the only line of text that occurs only **once** in the file **data.txt**. To do so we'll do the process in reverse.
 
@@ -78,4 +78,4 @@ It's fairly simple, we don't need any option at all. By running `sort data.txt`,
 3. `uniq -u` will dump the only **unique** line to stdout.
 </details>
 
-You can now jump to the [next level](/bandit/bandit9.md)
+You can now jump to the [next level](bandit9.md)

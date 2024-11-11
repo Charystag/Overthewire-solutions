@@ -121,4 +121,4 @@ You can see that on the last line, bash reports that the our server in the backg
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit21.md)
+You can now jump to the [next level](bandit21.md)

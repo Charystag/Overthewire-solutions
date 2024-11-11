@@ -1,7 +1,7 @@
 # [Bandit Challenge](https://overthewire.org/wargames/bandit/)
 
 <p align="center">
-<img src="/assets/bandit.png" width="500" height="500" alt="bandit picture" />
+<img src="assets/bandit.png" width="500" height="500" alt="bandit picture" />
 </p>
 
 ## Overview of the Bandit Challenge
@@ -28,7 +28,7 @@ Bandit is an ideal starting point for beginners and serves as a gateway to more 
 
 ## Where to start?
 
-You can go [there](/bandit/bandit00.md) for the solution to the first challenge
+You can go [there](bandit00.md) for the solution to the first challenge
 
 ## Acknowledgments
 

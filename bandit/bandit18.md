@@ -52,4 +52,4 @@ Because we need to `cat` the readme file in bandit18 home directory. It will pri
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit19.md)
+You can now jump to the [next level](bandit19.md)

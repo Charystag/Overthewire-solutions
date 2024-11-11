@@ -88,4 +88,4 @@ As we followed all the instructions, we get the password for the next level in t
 4. `git push` to push our changes to the remote repository
 </details>
 
-You can now jump to the [next level](/bandit/bandit32.md)
+You can now jump to the [next level](bandit32.md)

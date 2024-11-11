@@ -19,7 +19,7 @@ Clone the repository and find the password for the next level.
 
 ## Where to start?
 
-For more informations about how to clone the repository, see the [previous level](/bandit/bandit27.md).
+For more informations about how to clone the repository, see the [previous level](bandit27.md).
 
 From now on, I'll assume that you already retrieved the git repository in your temporary directory.
 
@@ -82,4 +82,4 @@ This will print the last change in the `README.md` file, thus printing the passw
 2. `git show f08b9` to view the difference with the previous commit.
 </details>
 
-You can now jump to the [next level](/bandit/bandit29.md)
+You can now jump to the [next level](bandit29.md)

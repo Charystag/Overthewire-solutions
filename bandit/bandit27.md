@@ -85,4 +85,4 @@ By running `cat README.md` we can retrieve the password for the next level.
 3. `cat README` to retrieve the password
 </details>
 
-You can now jump to the [next level](/bandit/bandit28.md)
+You can now jump to the [next level](bandit28.md)

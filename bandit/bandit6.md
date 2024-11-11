@@ -19,7 +19,7 @@ The password for the next level is stored **somewhere on the server** and has al
 - [Redirection](https://en.wikipedia.org/wiki/Redirection_\(computing\))
 - [Null Device](https://en.wikipedia.org/wiki/Null_device)
 
-See [bandit4->5](/bandit/bandit4.md) and [bandit5->6](/bandit/bandit5.md) for more useful material.
+See [bandit4->5](bandit4.md) and [bandit5->6](bandit5.md) for more useful material.
 
 ## Where to start?
 
@@ -116,4 +116,4 @@ Here is the full command `find / -user bandit7 -group bandit6 -size 33c 2> /dev/
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit7.md)
+You can now jump to the [next level](bandit7.md)

@@ -189,4 +189,4 @@ Then we can run `echo "$PRIVATE_KEY"` to get the name of the file and use the [s
 </details>
 </details>
 
-You can now jump to the [next level](/bandit/bandit17.md)
+You can now jump to the [next level](bandit17.md)

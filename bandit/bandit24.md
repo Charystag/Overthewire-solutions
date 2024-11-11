@@ -23,7 +23,7 @@ We already know that there is a daemon listening on port 30002 which listens for
 <details>
 <summary><h3 style="display:inline-block">Part 1 : Getting to know the daemon</h3></summary>
 
-This part will be pretty short as we already have experience with daemons (see [bandit14](/bandit/bandit14.md) for more explanations). We will simply connect and try to communicate 
+This part will be pretty short as we already have experience with daemons (see [bandit14](bandit14.md) for more explanations). We will simply connect and try to communicate 
 with the daemon to see how we should speak with it.
 <details>
 <summary>Hint</summary>
@@ -149,4 +149,4 @@ has been entered.
 > Don't forget to replace bandit24\_pass with the actual password for the bandit24 user.
 </details>
 
-You can now jump to the [next level](/bandit/bandit25.md)
+You can now jump to the [next level](bandit25.md)

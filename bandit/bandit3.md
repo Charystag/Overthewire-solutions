@@ -148,4 +148,4 @@ to the `.hidden` file as an argument : `cat inhere/.hidden`. This will dump the 
 2. `cat inhere/.hidden` to print the contents of the `.hidden` file
 </details>
 
-You can now jump to the [next level](/bandit/bandit4.md)
+You can now jump to the [next level](bandit4.md)

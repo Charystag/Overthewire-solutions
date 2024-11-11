@@ -89,4 +89,4 @@ We can then copy this string with ctrl+shift+c and paste it with ctrl+shift+v
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit1.md) 
+You can now jump to the [next level](bandit1.md) 

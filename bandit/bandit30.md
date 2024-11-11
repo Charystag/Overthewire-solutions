@@ -18,7 +18,7 @@ Clone the repository and find the password for the next level.
 
 ## Where to start?
 
-Once again, if you need information about retrieving the repository, go check [bandit27](/bandit/bandit27.md) level.
+Once again, if you need information about retrieving the repository, go check [bandit27](bandit27.md) level.
 
 Here, we can notice that nothing we did precedently works. As we had to do with the other levels, we have to learn another 
 git capability and use it to retrieve the password.
@@ -82,4 +82,4 @@ us to jump to the next level.
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit31.md)
+You can now jump to the [next level](bandit31.md)

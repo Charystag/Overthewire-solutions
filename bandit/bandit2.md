@@ -97,4 +97,4 @@ we can also use the double quotes to achieve this goal.
 1. `cat "spaces in this filename"` to print the password to stdout.
 </details>
 
-You can now jump to the [next level](/bandit/bandit3.md)
+You can now jump to the [next level](bandit3.md)

@@ -77,4 +77,4 @@ Here is the final command :
 1.	`./bandit20-do cat /etc/bandit_pass/bandit20` to print the password string on stdout.
 </details>
 
-You can now jump to the [next level](/bandit/bandit20.md)
+You can now jump to the [next level](bandit20.md)

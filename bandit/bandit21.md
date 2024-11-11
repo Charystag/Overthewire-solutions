@@ -74,4 +74,4 @@ We can go on and finally retrieve this password to jump to the next level.
 3. `cat tmpfile` to print the password string on stdout.
 </details>
 
-You can now jump to the [next level](/bandit/bandit22.md)
+You can now jump to the [next level](bandit22.md)

@@ -84,4 +84,4 @@ Which will output something along the lines : `The password is password_string`
 1. `tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt` is the command we use to translate our string back to its original form.
 </details>
 
-You can now jump to the [next level](/bandit/bandit12.md)
+You can now jump to the [next level](bandit12.md)

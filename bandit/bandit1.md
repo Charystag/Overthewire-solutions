@@ -43,4 +43,4 @@ This is the reason why we need to run `cat ./-` thus specifying the relative pat
 
 </details>
 
-You can now jump to the [next level](/bandit/bandit2.md)
+You can now jump to the [next level](bandit2.md)

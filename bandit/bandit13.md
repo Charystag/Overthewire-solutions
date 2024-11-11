@@ -128,4 +128,4 @@ This is our full command : `ssh -p 2220 -l bandit14 -i bandit14_sshkey bandit.la
 3. `ssh -i bandit14_sshkey ssh://bandit14@bandit.labs.overthewire.org:2220` to finally connect to user bandit14
 </details>
 
-You can now jump to the [next level](/bandit/bandit14.md)
+You can now jump to the [next level](bandit14.md)

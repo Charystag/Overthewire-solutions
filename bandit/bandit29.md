@@ -15,11 +15,11 @@ Clone the repository and find the password for the next level.
 ## Helpful Reading Material
 
 - [Branches in a nutshell](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
-See [bandit27](/bandit/bandit27) and [bandit28](/bandit/bandit28) for more helpful reading material
+See [bandit27](bandit27) and [bandit28](bandit28) for more helpful reading material
 
 ## Where to start?
 
-Once again, I'll assume that you already cloned the repository (see [bandit27](/bandit/bandit27) for 
+Once again, I'll assume that you already cloned the repository (see [bandit27](bandit27) for 
 more informations).
 
 
@@ -89,4 +89,4 @@ When running the following command, we can see that the password is on the `dev`
 
 > One key takeaway of this level may be the Git mantra : **branch early and branch often**
 
-You can now jump to the [next level](/bandit/bandit30.md)
+You can now jump to the [next level](bandit30.md)
