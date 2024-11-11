@@ -1,0 +1,6 @@
+[book]
+authors = ["Charystag"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Bandit Challenge"
